@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Sans grosso';
+    src: url('fontes/static/SourceSans3-Black.ttf') format('opentype');
+    font-weight: normal;
+}
+
+
+:root{
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue' 'cursive';
+    --fonte-Sans1: 'Sans grosso', 'cursive';
+}
+
+
+:root{
+    --cor-01: #26A03D;
+    --cor-02: #229BDB;
+    --cor-03: #29DAF0;
+    --cor-04: #042758;
+    --cor-05: #010937;
+    --cor-06: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-05);
+    font-size: 16px;
+    font-family: var(--fonte-padrao);
+    /*overflow-x: hidden;  Adiciona overflow-x: hidden para ocultar barras de rolagem lateral */
+}
+
+@media (max-width: 844px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 764px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 699px) {
+    h1 {
+        font-size: 23px;
+    }
+}
+
+
+@media (max-width: 660px) {
+    h1 {
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 620px) {
+    h1 {
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 580px) {
+    h1 {
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    h1 {
+        font-size: 15px;
+    }
+}
+
+
+header{
+    background-color: var(--cor-05);
+    background-image: linear-gradient(to bottom, var(--cor-05), var(--cor-04));
+    padding: 10px 80px 10px 20px;
+    margin: 0px;
+}
+
+
+header > h1{
+    font-family: var(--fonte-destaque);
+}
+
+
+header > p{
+    font-size: 1em;
+    color: white;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.separar{
+    background-color: white;
+    background-image: none;
+    padding: 10px 80px 10px 20px;
+    margin: 0px;
+    color: black;
+}
+
+.separar > p{
+    font-size: 1em;
+    color: black;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+nav{
+    background-color: var(--cor-04);
+    padding: 12px 10px;
+    margin: 0px;
+}
+nav > a{
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+
+nav > a:hover{
+    background-color: aqua;
+    text-decoration: none;
+}
+
+
+div{
+    display: inline-block;
+    color: white;
+    padding: 7px 26px;
+    margin: 0px auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.pequena{
+    max-width: 1200px;
+    background-color: #229BDB;
+    display: block;
+    margin: auto;
+    padding: 0px;
+}
+
+img.pequena {
+    max-width: 1000px;
+    min-width: 320px;
+    display: block;
+    margin: auto;
+    padding: 0px;
+    /*overflow-x: hidden;  Adiciona overflow-x: hidden para ocultar barras de rolagem lateral */
+}
+
+.principais{
+    max-width: 1200px;
+    background-color: #229BDB;
+    display: block;
+    margin: auto;
+    padding: 0px;
+}
+
+img.principais{
+    /*margin: 0px 64px 0px 112px; ANTES*/ 
+    max-width: 1000px;
+    min-width: 200px;
+    display: block;
+    margin: auto;
+    padding: 0px;
+    /*overflow-x: hidden;  Adiciona overflow-x: hidden para ocultar barras de rolagem lateral */
+}
+
+.sobre_nos_2{
+    margin: 0px 10px 0px 10px;
+    min-width: 200px;
+    max-width: 500px;
+    padding: 0px;
+    background-color: #229BDB;
+    overflow-x: hidden; /* Adiciona overflow-x: hidden para ocultar barras de rolagem lateral */
+}
+
+/*div.video{
+    margin: 0px 10px 0px 10px;
+    min-width: 200px;
+    max-width: 500px;
+    padding: 0px;
+    background-color: #229BDB;
+    overflow-x: hidden; /* Adiciona overflow-x: hidden para ocultar barras de rolagem lateral 
+}
+*/
+
+div.video{
+    display: block;
+    background-color: #183a1a;
+    max-width: 900px;
+    height: 50px;
+    margin-bottom: 30px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+    /*overflow-x: hidden;  Adiciona overflow-x: hidden para ocultar barras de rolagem lateral */
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    padding: 3px;
+    margin: 7px;
+    font-size: 50px;
+}
+
+
+.box-titulo{
+    display: block;
+    width: 100%; /* Define a largura da div como 100% do seu contêiner pai */
+    height: 177px;
+    max-width: 1000px; /* Define a largura máxima para evitar que a div se estenda demais em telas grandes */
+    padding: auto; /* Adiciona um espaço interno à div para melhorar a aparência */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total da div */
+    margin: auto; /* Centraliza a div horizontalmente */
+    font-family: var(--fonte-Sans1);  
+   
+}
+
+
+@media only screen and (max-width: 768px) {
+    .titulo {
+        font-size: 45px; /* Reduz o espaço interno em telas menores */
+    }
+}
+
+
+@media only screen and (max-width: 670px) {
+    .titulo {
+        font-size: 40px; /* Reduz o espaço interno em telas menores */
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .titulo {
+        font-size: 37px; /* Reduz o espaço interno em telas menores */
+    }
+}
+
+
+/* Media query para ajustar o layout em telas menores */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduz o espaço interno em telas menores */
+    }
+}
+
+
+.box-subtitulo{
+    text-decoration: dashed;
+}
+
+
+.subtitulo{
+    color: white;
+}
+
+footer{
+    padding: 15px;
+}
+
+

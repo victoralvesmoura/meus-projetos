@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Class e pseudo-classes/elementos</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #99E0E0, #224C7A);
+        }
+        main{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px #3b4d4d;
+            width: 700px;
+            padding: 10px;
+            margin: auto;
+        }
+        div{
+            display: inline-block;
+            background-color: violet;
+            border: 1px solid black;
+            text-align: center;
+            box-shadow: 5px 5px 10px rgba(21, 20, 20, 0.204);
+            height: 200px;
+            width: 200px;
+        }
+        div > p{
+            display:none;
+        }
+        div:hover > p{
+            display:block
+        }
+        div:hover{
+            color:red;
+            background-color: yellow;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: violet;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::after{
+            content: ' <=';
+        }
+        .especial::before{
+            content: '=> ';
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>ID, CLASS E PSEUDO-CLASSES/ELEMENTOS</h1>
+    <div id="d1">01 <p>minecraft</p></div>
+    <div id="d2">02<p>insanittalle  </p></div>
+    <div id="d3">03<p>sonic o ouriço</p></div>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UCfK4pE6Z3FbjmjAleW0MmNQ" target="_blank">Meu canal no Youtube</a></li>
+
+        <li><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">Meu linkedin</a></li>
+
+        <li><a href="google.com" class="especial" target="_blank">Site da Google</a></li>
+
+        <li><a href="https://translate.google.com.br/?hl=pt-BR" target="_blank">Site da Google tradutor</a></li>
+    </ul>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+</main>
+</body>
+</html>
