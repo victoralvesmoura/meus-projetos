@@ -9,87 +9,94 @@
 
      <!--FONTE: SOURCE SANS PRO para o Título -->
 
-     
 </head>
 <body>
 
     <header>
-
-        <div style="padding: 3px;">
-            <h1>MNC</h1>
+        <div style="padding: 3px; display: inline-block;">
+            <h1 style="text-align: to left; color: white; text-shadow: 1px 1px 2px black;   margin: 21px;">MNC</h1>
         </div>
-        <div style="padding: 3px">
+        <div style="padding: 3px; display: inline-block;">
             <h1 style="text-align: to left; color: white; text-shadow: 1px 1px 2px black;   margin: 21px;">ONDE SUAS HISTÓRIAS SE TORNAM <br> REALIDADE</h1>
         </div>
-
     </header>
 
-        <nav>
-            <a href="7">Home</a>
-            <a href="8">Noticias</a>
-            <a href="9">Curiosidades</a>
-            <a href="1">Fale conosco</a>
-        </nav>
+    <nav>
+        <a href="7">Home</a>
+        <a href="8">Noticias</a>
+        <a href="9">Curiosidades</a>
+        <a href="1">Fale conosco</a>
+    </nav>
 
-    <section class="imagem" id="principal">
-
+    <section class="fundo" id="img">
+        <!-- IMAGEM DE FUNDO -->
     </section>
 
     <div class="box-titulo" >
-        <h1 class="titulo">ENTRE EM UM MUNDO DE HISTÓRIAS TOTALMENTE SEU</h1>
+        <h1 class="titulo">ENTRE EM UM MUNDO DE HISTÓRIAS <br> TOTALMENTE SEU</h1>
     </div>
 
-     <div class="box-Subtitulo">
+    <div class="box-Subtitulo">
         <h2 class="Subtitulo">NOVIDADES</h2>
     </div>
 
-    <div class="pequena">
-        <img src="imagens/dan-droids.png" alt="só por enquanto">
+    <section class="box-image">
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/dan-droids-pq.png"><img src="imagens/dan-droids.png" class="imagem1" alt="androids... por enquanto"></source>
+        </picture>
         
+    </section>
+
+    <div class="box-Subtitulo">
+        <h2 class="Subtitulo">HISTÓRIAS PRINCIPAIS</h2>
     </div>
 
-    <div>
-        <h2>HISTÓRIAS PRINCIPAIS</h2>
-    </div>
-
-    <p style="margin: 0px; font-size: 1px;">oi</p>
-
-    <div>
-        <img src="imagens/Sem título-1 200.png" alt="HQ-01 SONIC">
-    </div>
-    <div>
-        <img src="imagens/Sem título-2 200.png" alt="HQ-01 MINECRAFT">
-    </div>
-    <div>
-        <img src="imagens/Sem título-3 200.png" alt="HQ-01 INSANITTALE">
-    </div>
-
-    <header class="separar">
-            <h2>OUTRAS OBRAS ARTISTICAS</h2>
-        <div>
-            <img src="" alt="artistas">
+    <!-- ALERTA DE ERRO PARA CONCERTAR ABAIXO -->
+    <section>
+        <div class="HQs" style="display: inline-block;">
+            <img class="hq" src="imagens/Sem título-1 200.png" alt="HQ-01 SONIC">
         </div>
-    </header>
+        <div class="HQs" style="display: inline-block;">
+            <img class="hq" src="imagens/Sem título-2 200.png" alt="HQ-01 MINECRAFT">
+        </div>
+        <div class="HQs" style="display: inline-block;">
+            <img class="hq" src="imagens/Sem título-3 200.png" alt="HQ-01 INSANITTALE">
+        </div>
+    </section>
+    <!-- ALERTA DE ERRO PARA CONCERTAR ACIMA -->
 
-    <div style="display: block;">
-        <h2>SOBRE NÓS</h2>
-        <div class="sobre_nos_2">
+
+    <div class="box-2">
+        <h2 class="Subtitulo">OUTRAS OBRAS ARTISTICAS</h2>
+    </div>
+
+    <section class="box-image">
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/dan-droids-pq.png"><img src="imagens/dan-droids.png" alt="artistas"></source>
+        </picture>
+
+    </section>
+
+    <!-- PARAMOS AQUI -->
+    <section class="box-3" style="display: block;">
+        <h2 class="Subtitulo">SOBRE NÓS</h2>
+        <article class="conteudo1">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima commodi explicabo a, autem nihil recusandae quae dignissimos minus officiis odio, reiciendis laboriosam, consequuntur sunt. Velit vitae laborum aut debitis quisquam?</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus atque odio consequatur obcaecati magni assumenda a, veniam dolore accusantium laborum? Dolor temporibus provident ea quos modi, debitis earum rem molestiae!</p>
-        </div>
-        <div class="video">
+        </article>
+        <div class="video1" style="display:inline-block">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/8QTczbn556w?si=HwdCBjiCjd4m3Hp3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-    </div>
+    </section>
 
-    <header class="separar">
+    <section class="box-4">
         <h2>JUNTE-SE A EQUIPE</h2>
         <h3>E TORNE SUAS HISTÓRIAS REALIDADE</h3>
-    </header>
+    </section>
 
-    <div>
+    <section class="box-5">
         <h2>NOSSAS PLATAFORMAS DIGITAIS</h2>
-    </div>
+    </section>
 
     <footer style="background-color: black; margin: 20px 0px 0px 0px; ">
         <div>
@@ -106,8 +113,5 @@
         </div>
     </footer>
 
-    <main>
-
-    </main>
 </body>
 </html>
